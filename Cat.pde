@@ -1,4 +1,4 @@
-class Cat {
+class Cat { // didn't get to implement this :(
 
   float xPos, yPos;
   color colour;
@@ -21,17 +21,7 @@ class Cat {
 
   void appear() { // cats slowly peer from any edge of window
   }
-
-  void hairball() { // bad cat shoots . . .
-  }
-
-  void purr() { // good cat purrs 
-  }
   
-  void puzzleReset() { // . . . a puzzle piece out of place 
-    
-  }
-
   void initializePuzzles() {
     //puzzle[0] = Puzzle1;
   }

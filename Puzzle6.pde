@@ -1,10 +1,11 @@
 class Puzzle6 extends Puzzle {
 
-  Puzzle6() {
-    super();
+  Puzzle6() { // middle left
+    super(((width/5)*2), (height - (height/5) + 25), color(255), 200, 191);
   }
 
   void appear() {
+    super.appear();
     beginShape();
     vertex(xPos, yPos);
     vertex(xPos + 15, yPos);
@@ -24,5 +25,9 @@ class Puzzle6 extends Puzzle {
     vertex(xPos, yPos + 50);
     vertex(xPos, yPos);
     endShape();
+  }
+  
+  void correctPlace() {
+    super.correctPlace();
   }
 } // end of subclass

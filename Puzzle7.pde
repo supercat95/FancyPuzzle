@@ -1,10 +1,11 @@
 class Puzzle7 extends Puzzle {
   
-  Puzzle7() {
-    super();
+  Puzzle7() { // bottom right
+    super(((width/5)*3), (height - (height/5) + 25), color(255), 250, 241);
   }
   
   void appear() {
+    super.appear();
     beginShape();
     vertex(xPos, yPos);
     vertex(xPos + 15, yPos);
@@ -24,5 +25,9 @@ class Puzzle7 extends Puzzle {
     vertex(xPos, yPos + 15);
     vertex(xPos, yPos);
     endShape();
+  }
+  
+  void correctPlace() {
+    super.correctPlace();
   }
 } // end of subclass
